@@ -18,7 +18,7 @@ RUN bash -c "if [ $INSTALL_DEV == 'true' ] ; then poetry install --no-root ; els
 
 # Supervisor
 COPY ./supervisord.conf /app/supervisor/supervisord.conf
-COPY ./start.sh /start
-RUN chmod +x /start
+COPY ./start-supervisor.sh /start-supervisor
+RUN chmod +x /start-supervisor
 
 ENV PYTHONPATH=/app
