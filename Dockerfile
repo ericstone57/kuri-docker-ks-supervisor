@@ -16,4 +16,9 @@ COPY ./pyproject.toml ./poetry.lock* /app/
 ARG INSTALL_DEV=true
 RUN bash -c "if [ $INSTALL_DEV == 'true' ] ; then poetry install --no-root ; else poetry install --no-root --no-dev ; fi"
 
+# Supervisor
+COPY ./supervisord.conf /app/supervisor/supervisord.conf
+COPY ./start.sh /start
+RUN chmod +x /start
+
 ENV PYTHONPATH=/app
