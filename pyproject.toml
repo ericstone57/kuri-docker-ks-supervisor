@@ -42,8 +42,10 @@ supervisor = "^4.2.2"
 uvicorn = "^0.14.0"
 wechatpy = { version = "^1.8.15", extras = ["cryptography"] }
 xlrd = "^2.0.1"
-django-ckeditor = "^6.2.0"
 ks-shared = {git = "https://github.com/ericstone57/ks_shared.git", rev = "main"}
+django-ckeditor = "^6.2.0"
+django-json-widget = "^1.1.1"
+django-simpleui = "^2022.3.1"
 
 [tool.poetry.dev-dependencies]
 django-debug-toolbar = "^3.2.1"
