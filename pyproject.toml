@@ -46,6 +46,7 @@ ks-shared = {git = "https://github.com/ericstone57/ks_shared.git", rev = "main"}
 django-ckeditor = "^6.2.0"
 django-json-widget = "^1.1.1"
 django-simpleui = "^2022.3.1"
+djantic = "^0.5.0"
 
 [tool.poetry.dev-dependencies]
 django-debug-toolbar = "^3.2.1"
