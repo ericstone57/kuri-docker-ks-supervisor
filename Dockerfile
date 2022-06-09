@@ -7,7 +7,10 @@ RUN install_packages curl \
 	gcc \
 	libc6-dev \
 	autoconf \
-	make
+	make \
+	python3-dev \
+	default-libmysqlclient-dev \
+	build-essential
 
 # Copy poetry.lock* in case it doesn't exist in the repo
 COPY ./pyproject.toml ./poetry.lock* /app/
